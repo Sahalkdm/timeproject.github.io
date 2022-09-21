@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1 id="DisTime">Hello Guys</h1>
+            <h1></h1>
+            <img src="" alt="" id="img">
+            <form>
+            <table>
+                
+                <tr>
+                    <td>Wakeup</td>
+                    <td>
+                        <select id="Wakeup">
+                            <option value="" disabled selected>select time...</option>
+                            <option value="04">04:00-05:00 AM</option>
+                            <option value="05">05:00-06:00 AM</option>
+                            <option value="06">06:00-07:00 AM</option>
+                            <option value="07">07:00-08:00 AM</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Lunch</td>
+                    <td>
+                        <select id="Lunch" >
+                            <option value="" disabled selected>select time...</option>
+                            <option value="12">12:00-01:00 PM</option>
+                            <option value="13">01:00-02:00 PM</option>
+                            <option value="14">02:00-03:00 PM</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Sleeping </td>
+                    <td>
+                        <select id="Sleeping" >
+                            <option value="" disabled selected>select time...</option>
+                            <option value="21">09:00-10:00 PM</option>
+                            <option value="22">10:00-11:00 PM</option>
+                            <option value="23">11:00-12:00 PM</option>
+                            <option value="00">12:00-01:00 PM</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div class="btn"><input type="submit" value="submit" onclick="wakeupEvent()" id="button"></div>
+            
+        </form>
+            <div id="result"></div>
+        </div>
+        <div class="box2">
+        
+            <h1>ToDo List</h1>
+            <h2 class="shead"></h2>
+            <div>
+            <input type="text" id="list" placeholder="🖊️ Add tasks..." ">
+            <button id="click">Add</button>
+            </div>
+            <div class="tasks">
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a5496fd0d2.js" crossorigin="anonymous"></script>
+</body>
+</html>
